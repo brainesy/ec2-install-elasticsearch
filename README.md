@@ -18,15 +18,15 @@ git clone https://github.com/brainesy/ec2-install-elasticsearch.git && cd ec2-in
 
 #####  Install Elasticsearch
 ```
-sudo install-elasticsearch.sh
+sudo ./install-elasticsearch.sh
 ```
 
 #####  Configure Elasticsearch
 ```
-sudo configure-elasticsearch.sh [CLUSTER_NAME]  [JAVA_HEAP_SIZE]
+sudo ./configure-elasticsearch.sh [CLUSTER_NAME]  [JAVA_HEAP_SIZE]
 ```
-e.g. 
-sudo configure-elasticsearch.sh my-elasticsearch-cluster  1024m
+**Example** 
+`sudo configure-elasticsearch.sh my-elasticsearch-cluster  1024m`
 
 #### Done!
 
