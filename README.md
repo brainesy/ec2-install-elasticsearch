@@ -24,9 +24,10 @@ sudo install-elasticsearch.sh
 #####  Configure Elasticsearch
 ```
 sudo configure-elasticsearch.sh [CLUSTER_NAME]  [JAVA_HEAP_SIZE]
+```
 e.g. 
 sudo configure-elasticsearch.sh my-elasticsearch-cluster  1024m
-```
+
 #### Done!
 
 Elasticsearch will now be running on your instance.  Repeat this process for each node in the cluster.
