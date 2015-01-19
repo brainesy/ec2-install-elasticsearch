@@ -6,28 +6,28 @@ Automatically install and configure Elasticsearch on EC2
 Usage
 -----
 
-#### Install git on your ec2 instance
+##### Install git on your ec2 instance
 ```
 sudo yum install -y git
 ```
    
-####  Clone this repository 
+#####  Clone this repository 
 ```
-https://github.com/brainesy/ec2-install-elasticsearch.git
-```
-
-####  Install Elasticsearch
-```
-sudo install-elasticsearch.sh
+git clone https://github.com/brainesy/ec2-install-elasticsearch.git && cd ec2-install-elasticsearch
 ```
 
-####  Configure Elasticsearch
+#####  Install Elasticsearch
 ```
-sudo configure-elasticsearch.sh [CLUSTER_NAME]  [JAVA_HEAP_SIZE]
+sudo ./install-elasticsearch.sh
 ```
-e.g. 
+
+#####  Configure Elasticsearch
 ```
-sudo configure-elasticsearch.sh my-elasticsearch-cluster  1024m
+sudo ./configure-elasticsearch.sh [CLUSTER_NAME]  [JAVA_HEAP_SIZE]
 ```
+**Example** 
+`sudo configure-elasticsearch.sh my-elasticsearch-cluster  1024m`
+
+#### Done!
 
 Elasticsearch will now be running on your instance.  Repeat this process for each node in the cluster.
