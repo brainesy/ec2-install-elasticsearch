@@ -23,6 +23,7 @@ bin/plugin -install elasticsearch/elasticsearch-cloud-aws/$ES_EC2_CLOUD_PLUGIN_V
 bin/plugin -install mobz/elasticsearch-head
 bin/plugin -install lukas-vlcek/bigdesk
 bin/plugin -install royrusso/elasticsearch-HQ
+bin/plugin -install lmenezes/elasticsearch-kopf
 # bin/plugin -install elasticsearch/marvel/latest
 
 echo 'Installation complete.'
