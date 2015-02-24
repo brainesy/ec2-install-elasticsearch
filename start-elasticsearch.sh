@@ -3,7 +3,7 @@ function waitForElastticSearchStartup
 
   for (( ; ; ))
   do
-    curl -silent localhost:9200/_cluster/state/version >/dev/null
+    curl -silent localhost:9200/_cluster/state/version 
 
     if [ $? -eq 0 ]; then
       break
