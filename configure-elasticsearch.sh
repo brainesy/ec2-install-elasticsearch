@@ -42,6 +42,9 @@ discovery:
   zen.ping.multicast.enabled: false
   zen.ping.timeout: 30s
 
+network:
+  publish_host: _ec2:publicDns_
+
 repositories:
   s3:
     bucket: ingogo-backups
