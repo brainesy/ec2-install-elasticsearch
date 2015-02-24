@@ -71,11 +71,10 @@ echo 'Configuring Elasticsearch to run on startup'
 
 /sbin/chkconfig --del elasticsearch
 /sbin/chkconfig --add elasticsearch
-service elasticsearch restart
 
 cat << EOF
 
-Configuration complete.
+Configuration complete.  Run start-elasticsearch.sh or restart-elasticsearch.sh for the changes to take effect.
 
 Install folder:
 /usr/share/elasticsearch
