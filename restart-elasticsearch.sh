@@ -1,12 +1,10 @@
 #!/bin/bash
-set -e
 
 function waitForElastticSearchStartup
 {
-
   for (( ; ; ))
   do
-    curl -silent ec2-54-66-220-194.ap-southeast-2.compute.amazonaws.com:9200/_cluster/state/version >/dev/null
+    curl -silent localhost:9200/_cluster/state/version >/dev/null
 
     if [ $? -eq 0 ]; then
       break
@@ -29,8 +27,9 @@ curl -XPUT localhost:9200/_cluster/settings -d '
 
 echo ''
 echo Restarting ElasticSearch...
-service elasticsearch restart
-sleep 5
+service elasticsearch stop
+sleep 10
+service elasticsearch start
 waitForElastticSearchStartup
 
 echo ''
@@ -42,3 +41,5 @@ curl -XPUT localhost:9200/_cluster/settings -d '
     }
 }'
 
+echo ''
+echo Done.  ElasticSearch is now running.
