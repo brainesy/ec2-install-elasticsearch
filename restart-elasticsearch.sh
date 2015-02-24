@@ -30,6 +30,7 @@ curl -XPUT localhost:9200/_cluster/settings -d '
 echo ''
 echo Restarting ElasticSearch...
 service elasticsearch restart
+sleep 5
 waitForElastticSearchStartup
 
 echo ''
