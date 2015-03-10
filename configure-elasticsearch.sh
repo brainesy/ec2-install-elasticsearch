@@ -32,6 +32,10 @@ echo 'Creating /etc/elasticsearch/elasticsearch.yml'
 cat << EOF > /etc/elasticsearch/elasticsearch.yml
 
 cluster.name: $ES_CLUSTER_NAME
+
+script.groovy.sandbox.enabled: false
+script.disable_dynamic: true
+
 cloud:
   aws:
     region: ap-southeast-2
