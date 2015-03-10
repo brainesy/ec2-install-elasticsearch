@@ -30,7 +30,7 @@ sudo ./configure-elasticsearch.sh [CLUSTER_NAME]  [JAVA_HEAP_SIZE]
 
 #####  Start Elasticsearch
 ```
-sudo ./start-elasticsearch
+sudo ./start-elasticsearch.sh
 ```
 
 #### Done!
