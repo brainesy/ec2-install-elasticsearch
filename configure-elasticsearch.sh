@@ -44,7 +44,7 @@ cloud:
 discovery:
   type: ec2
   zen.ping.multicast.enabled: false
-  zen.ping.timeout: 30s
+  zen.ping.timeout: 10s
 
 network:
   publish_host: _ec2:publicDns_
