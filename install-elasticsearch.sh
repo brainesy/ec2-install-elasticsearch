@@ -1,6 +1,6 @@
 #/bin/bash
 
-export ES_PKG_NAME=elasticsearch-1.4.1
+export ES_PKG_NAME=elasticsearch-1.4.5
 export ES_EC2_CLOUD_PLUGIN_VERSION=2.4.1
 
 if [ "$(id -u)" != "0" ]; then

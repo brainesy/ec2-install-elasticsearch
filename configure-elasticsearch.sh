@@ -51,7 +51,7 @@ network:
 
 repositories:
   s3:
-    bucket: ingogo-backups
+    bucket: backups
     base_path: elasticsearch/snapshots
     region: ap-southeast-2
 EOF
